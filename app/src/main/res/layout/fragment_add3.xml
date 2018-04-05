@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:textColor="#336699"
+        android:text="添加记录"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_1"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/tv_add_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:maxLength="5"
+            android:text="姓名："/>
+        <EditText
+            android:id="@+id/ed_add_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_add_name"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_b2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_b1"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_add_studno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:text="学号："/>
+        <EditText
+            android:id="@+id/ed_add_studno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_add_studno"
+            android:hint="请输入学号"
+            android:maxLength="10"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_b3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_b2"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_classesid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:text="班级号："/>
+        <EditText
+            android:id="@+id/ed_classesid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_classesid"
+            android:layout_marginLeft="10dp"
+            android:hint="请输入班级号"
+            android:maxLength="10" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_b4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_b3"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_add_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:text="记录："/>
+        <EditText
+            android:id="@+id/ed_add_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_add_message"
+            android:layout_marginLeft="10dp"
+            android:maxLength="25"
+            android:hint="请添加记录"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_b4"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#077781"
+        android:textColor="#fff"
+        android:text="提交记录"/>
+
+
+
+</RelativeLayout>

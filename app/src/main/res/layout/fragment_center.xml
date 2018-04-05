@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:src="@mipmap/iv_head"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_head"
+            android:layout_centerVertical="true"
+            android:text="小女孩"
+            />
+        <ImageView
+            android:id="@+id/iv_qr_code"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/qr_code"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_all_message"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/rl_info"
+        android:layout_marginTop="20dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/iv_all_message"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/all_message"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_all_message"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:text="完善信息"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_up_password"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/rl_all_message"
+        android:layout_marginTop="20dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/iv_up_password"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/up_password"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_up_password"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:text="更改密码"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_info_hand_password"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/rl_up_password"
+        android:layout_marginTop="1dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/iv_hand_password"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/tjpu"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_hand_password"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:text="天工大教务处"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_check_updates"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/rl_info_hand_password"
+        android:layout_marginTop="20dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/iv_check_updates"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/check_updates"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_check_updates"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:text="检查更新"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_setting"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/rl_check_updates"
+        android:layout_marginTop="20dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/setting"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_setting"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:text="设置"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
